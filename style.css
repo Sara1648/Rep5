@@ -1,0 +1,106 @@
+header{
+    position: fixed;
+    TOP:0;
+    width: 100%;
+    z-index: 1000;
+    color:aqua;
+    background-attachment: fixed;
+    background-color: black;
+    text-align: center;
+    font-weight: normal ;
+    font-size: large;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid cyan;
+
+}
+main{margin-top:120PX ;}
+body{
+    background-color: black;
+}
+section
+   h1{ color: aqua;
+    font-weight: 900;}
+
+
+    p{ color:white;
+    max-width:700PX;
+    font-family: Arial, Helvetica, sans-serif;
+     line-height: 40px;
+     margin: auto;
+    }
+
+    button{
+     color: black;
+    background-color: aqua ;
+     font-weight: 600;}
+
+section{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+}
+section{ position: relative;}
+.Langage{
+    width: 250PX;
+    bordre-radius: 10PX;
+    background-color: #20242D;
+    box-shadow: 0 4px 10px cyan;
+    margin: 100px;
+    padding: 10px;
+    position: absolute;µ
+    top: 200PX;
+    left: 40px;
+}
+.Langage img{
+    max-width: 250px;
+    max-height: 100px;
+    bordre-radius: 10PX;
+}
+.dev{
+    width: 250PX;
+    background-color:#20242D ;
+    bordre-radius: 10PX;
+    box-shadow: 0 4px 10px cyan;
+    margin: 20PX;
+    padding: 10px;
+    position: absolute;
+    top: 456px;;
+left: 500PX;
+}
+.dev img{
+     max-width: 250px;
+    max-height: 100px;
+    bordre-radius: 10PX;
+
+}
+
+.Algorithme{
+    width: 250PX;
+    bordre-radius: 10PX;
+    box-shadow: 0 4px 10px cyan;
+    background-color:#20242D;
+    margin: 20px;
+    padding: 10px;
+    position: absolute;
+    top: 456PX;
+    left: 880PX;
+    
+}
+.Algorithme img{
+     max-width: 250px;
+    max-height: 100px;
+    bordre-radius: 10PX;
+}
+footer{color: white;
+    border-top: 1PX solid cyan;
+    text-align: center;
+    background-color: #20242D;
+    padding-top: 20PX;
+    padding-bottom: 20PX;
+    margin-top: 50PX ;
+    position: relative;
+    TOP:500PX;
+}
+
+
