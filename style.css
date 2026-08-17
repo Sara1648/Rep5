@@ -1,106 +1,186 @@
 header{
     position: fixed;
-    TOP:0;
-    width: 100%;
-    z-index: 1000;
+
+    /* ✅ Très bien : position: fixed est utilisée comme demandé. */
+
+    top:0;
+    width:100%;
+    z-index:1000;
     color:aqua;
-    background-attachment: fixed;
-    background-color: black;
-    text-align: center;
-    font-weight: normal ;
-    font-size: large;
-    padding: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom: 1px solid cyan;
-
+    background-attachment:fixed;
+    background-color:black;
+    text-align:center;
+    font-weight:normal;
+    font-size:large;
+    padding:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-bottom:1px solid cyan;
 }
-main{margin-top:120PX ;}
+
+/*  La propriété background-attachment: fixed n'est pas nécessaire ici. */
+
+main{
+    margin-top:120px;
+}
+
+/* ✅ Bonne idée : un espace est ajouté sous le header fixe. */
+
 body{
-    background-color: black;
+    background-color:black;
 }
-section
-   h1{ color: aqua;
-    font-weight: 900;}
 
+section h1{
+    color:aqua;
+    font-weight:900;
+}
 
-    p{ color:white;
-    max-width:700PX;
-    font-family: Arial, Helvetica, sans-serif;
-     line-height: 40px;
-     margin: auto;
-    }
+/* ⚠️ Attention à l'écriture du sélecteur :
+   "section h1" est plus clair et plus simple que de séparer section et h1. */
 
-    button{
-     color: black;
-    background-color: aqua ;
-     font-weight: 600;}
+p{
+    color:white;
+    max-width:700px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height:40px;
+    margin:auto;
+}
+
+/* ✅ Bonne mise en forme des paragraphes. */
+
+button{
+    color:black;
+    background-color:aqua;
+    font-weight:600;
+}
+
+/* ✅ Bouton bien présenté. */
 
 section{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    position:relative;
 }
-section{ position: relative;}
+
+/* ✅ Très bien : position: relative est utilisée. */
+
 .Langage{
-    width: 250PX;
-    bordre-radius: 10PX;
-    background-color: #20242D;
-    box-shadow: 0 4px 10px cyan;
-    margin: 100px;
-    padding: 10px;
-    position: absolute;µ
-    top: 200PX;
-    left: 40px;
-}
-.Langage img{
-    max-width: 250px;
-    max-height: 100px;
-    bordre-radius: 10PX;
-}
-.dev{
-    width: 250PX;
-    background-color:#20242D ;
-    bordre-radius: 10PX;
-    box-shadow: 0 4px 10px cyan;
-    margin: 20PX;
-    padding: 10px;
-    position: absolute;
-    top: 456px;;
-left: 500PX;
-}
-.dev img{
-     max-width: 250px;
-    max-height: 100px;
-    bordre-radius: 10PX;
+    width:250px;
 
+    bordre-radius:10px;
+    /* ❌ Attention : "bordre-radius" est incorrect.
+       Il faut écrire "border-radius". */
+
+    background-color:#20242D;
+    box-shadow:0 4px 10px cyan;
+    margin:100px;
+    padding:10px;
+
+    position:absolute;
+
+    /* ✅ Très bien : position: absolute est utilisée pour la carte. */
+
+    top:200px;
+    left:40px;
+}
+
+.Langage img{
+    max-width:250px;
+    max-height:100px;
+
+    bordre-radius:10px;
+
+    /* ❌ Même erreur ici : "bordre-radius" doit être "border-radius". */
+}
+
+.dev{
+    width:250px;
+    background-color:#20242D;
+
+    bordre-radius:10px;
+
+    /* ❌ Écrire "border-radius". */
+
+    box-shadow:0 4px 10px cyan;
+    margin:20px;
+    padding:10px;
+
+    position:absolute;
+
+    /* ✅ Très bien : position: absolute est utilisée. */
+
+    top:456px;
+    left:500px;
+}
+
+.dev img{
+    max-width:250px;
+    max-height:100px;
+
+    bordre-radius:10px;
+
+    /* ❌ Écrire "border-radius". */
 }
 
 .Algorithme{
-    width: 250PX;
-    bordre-radius: 10PX;
-    box-shadow: 0 4px 10px cyan;
+    width:250px;
+
+    bordre-radius:10px;
+
+    /* ❌ Écrire "border-radius". */
+
+    box-shadow:0 4px 10px cyan;
     background-color:#20242D;
-    margin: 20px;
-    padding: 10px;
-    position: absolute;
-    top: 456PX;
-    left: 880PX;
-    
+    margin:20px;
+    padding:10px;
+
+    position:absolute;
+
+    /* ✅ Très bien : position: absolute est utilisée. */
+
+    top:456px;
+    left:880px;
 }
+
 .Algorithme img{
-     max-width: 250px;
-    max-height: 100px;
-    bordre-radius: 10PX;
-}
-footer{color: white;
-    border-top: 1PX solid cyan;
-    text-align: center;
-    background-color: #20242D;
-    padding-top: 20PX;
-    padding-bottom: 20PX;
-    margin-top: 50PX ;
-    position: relative;
-    TOP:500PX;
+    max-width:250px;
+    max-height:100px;
+
+    bordre-radius:10px;
+
+    /* ❌ Écrire "border-radius". */
 }
 
+footer{
+    color:white;
+    border-top:1px solid cyan;
+    text-align:center;
+    background-color:#20242D;
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:50px;
 
+    position:relative;
+
+    /* ✅ Bonne utilisation de position: relative. */
+
+    top:500px;
+}
+
+/*
+ Félicitations !
+
+Très bon travail !
+
+ Les trois positions demandées sont présentes :
+✔ position: fixed → header
+✔ position: relative → sections et footer
+✔ position: absolute → les trois cartes
+
+ Remarque principale :
+Tu as fait plusieurs petites fautes dans "border-radius" en écrivant
+"bordre-radius". Fais attention à l'orthographe des propriétés CSS.
+
+ Continue comme ça ! Tu as bien compris le positionnement.
+
+ Crée ta propre page d'accueil AB Informatique.
+*/
